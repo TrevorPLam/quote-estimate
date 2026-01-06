@@ -32,6 +32,8 @@ textarea:focus-visible {
   outline-offset: 2px;
 }
 
-.container-responsive {
-  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+@layer components {
+  .container-responsive {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
 }
