@@ -10,7 +10,13 @@ export const rateLimit = (
   windowMs: number,
 ): { allowed: boolean; remaining: number } => {
   const now = Date.now();
-  const existing = requestCounts.get(key);
+
+  // Clean up expired entries to avoid unbounded growth of the map.
+  for (const [storedKey, entry] of requestCounts) {
+    if (entry.expiresAt < now) {
+      requestCounts.delete(storedKey);
+    }
+  }
 
   if (!existing || existing.expiresAt < now) {
     requestCounts.set(key, { count: 1, expiresAt: now + windowMs });
