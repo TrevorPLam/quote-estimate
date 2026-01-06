@@ -58,7 +58,9 @@ export async function POST(request: Request) {
     timeline: sanitizeString(body.timeline ?? "", 120),
     address: sanitizeString(body.address ?? "", 200),
     propertyType: sanitizeString(body.propertyType ?? "", 80),
-    photos: Array.isArray(body.photos) ? body.photos.slice(0, 5) : [],
+    photos: Array.isArray(body.photos)
+      ? body.photos.slice(0, 5).map((photo: unknown) => sanitizeString(photo, 300))
+      : [],
   };
 
   if (!submission.name || !submission.email || !isValidEmail(submission.email)) {
