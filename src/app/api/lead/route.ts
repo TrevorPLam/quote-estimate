@@ -26,16 +26,22 @@ export async function POST(request: Request) {
     if (!token) {
       return NextResponse.json({ error: "Turnstile verification required" }, { status: 400 });
     }
-    const verifyResponse = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({
-        secret: siteConfig.spamProtection.turnstileSecretKey,
-        response: token,
-        remoteip: ip,
-      }),
-    });
-    const verification = await verifyResponse.json();
+    try {
+      const verifyResponse = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          secret: siteConfig.spamProtection.turnstileSecretKey,
+          response: token,
+          remoteip: ip,
+        }),
+      });
+      const verification = await verifyResponse.json();
+      if (!verification.success) {
+        return NextResponse.json({ error: "Turnstile verification failed" }, { status: 400 });
+      }
+    } catch (error) {
+      console.error("Turnstile verification error", error);
     if (!verification.success) {
       return NextResponse.json({ error: "Turnstile verification failed" }, { status: 400 });
     }
