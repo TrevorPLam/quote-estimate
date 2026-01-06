@@ -294,6 +294,4 @@ export const siteConfig: SiteConfig = {
     ogImagePath: "/projects/seaside-after.jpg",
   },
 
-  analytics: { provider: "none" },
-  spamProtection: { turnstileEnabled: false, turnstileSiteKey: "TODO:INPUT", turnstileSecretKey: "TODO:INPUT" },
-};
+  spamProtection: { turnstileEnabled: false, turnstileSiteKey: "TODO:INPUT" },
