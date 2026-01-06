@@ -34,8 +34,8 @@ export default function CityPage({ params }: CityPageProps) {
       <div className="space-y-2">
         <p className="text-sm text-slate-600">Service Area</p>
         <h1 className="text-3xl font-bold text-slate-900">{city.headline}</h1>
-        {city.paragraphs.map((paragraph) => (
-          <p key={paragraph} className="text-slate-700">
+        {city.paragraphs.map((paragraph, index) => (
+          <p key={index} className="text-slate-700">
             {paragraph}
           </p>
         ))}
