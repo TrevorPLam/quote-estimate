@@ -23,7 +23,9 @@ export default function TermsPage() {
       <div className="space-y-3 text-slate-700">
         <p>Use of this site is for requesting estimates and learning about our services.</p>
         <p>Project agreements will include detailed scopes, payment schedules, and warranty language.</p>
-        <p>Contact {siteConfig.email ?? "TODO:INPUT"} with any questions about these terms.</p>
+        {siteConfig.email && (
+          <p>Contact {siteConfig.email} with any questions about these terms.</p>
+        )}
       </div>
       <JsonLd
         data={buildBreadcrumbSchema([
