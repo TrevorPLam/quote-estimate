@@ -1,5 +1,6 @@
 /**
  * Lightweight in-memory rate limiting utility for API routes.
+ * @warning Not suitable for serverless environments. Use a distributed solution like Redis for production.
  */
 const requestCounts = new Map<string, { count: number; expiresAt: number }>();
 
