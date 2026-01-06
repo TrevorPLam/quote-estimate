@@ -9,7 +9,7 @@ export type AnalyticsConfig =
 export type SpamProtectionConfig = {
   turnstileEnabled: boolean;
   turnstileSiteKey?: string;
-  turnstileSecretKey?: string;
+  // Turnstile secret key should be stored in server-only environment variables, not in shared config.
 };
 
 export type CopyBlocks = {
