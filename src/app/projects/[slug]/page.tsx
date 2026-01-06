@@ -44,8 +44,12 @@ export default function ProjectPage({ params }: ProjectPageProps) {
         </ul>
       </div>
       <div className="space-y-2">
-        <p className="text-slate-700">Timeline: {project.timelineText}</p>
-        <p className="text-slate-700">Results: {project.resultsText}</p>
+        {project.timelineText && (
+          <p className="text-slate-700">Timeline: {project.timelineText}</p>
+        )}
+        {project.resultsText && (
+          <p className="text-slate-700">Results: {project.resultsText}</p>
+        )}
       </div>
       <JsonLd
         data={buildBreadcrumbSchema([
