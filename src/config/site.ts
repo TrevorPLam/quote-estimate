@@ -285,7 +285,7 @@ export const siteConfig: SiteConfig = {
     financing: "Financing options are available on request; TODO:INPUT for provider details.",
   },
 
-  leadRouting: { webhookUrl: "TODO:INPUT" },
+  leadRouting: { },
   seo: {
     siteTitle: "Coastal Crafts Remodeling",
     titleTemplate: "%s | Coastal Crafts Remodeling",
