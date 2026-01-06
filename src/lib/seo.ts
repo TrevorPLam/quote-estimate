@@ -12,7 +12,11 @@ export const buildMetadata = (options: {
   const fullTitle = options.title
     ? siteConfig.seo.titleTemplate.replace("%s", options.title)
     : siteConfig.seo.siteTitle;
-  const canonicalUrl = options.path ? `${siteConfig.baseUrl}${options.path}` : siteConfig.baseUrl;
+  const canonicalUrl = options.path
+    ? options.path.startsWith("http")
+      ? options.path
+      : `${siteConfig.baseUrl.replace(/\/+$/, "")}/${options.path.replace(/^\/+/, "")}`
+    : siteConfig.baseUrl;
 
   return {
     title: fullTitle,
