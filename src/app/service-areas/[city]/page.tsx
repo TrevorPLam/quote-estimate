@@ -17,7 +17,7 @@ export const generateMetadata = ({ params }: CityPageProps) => {
   if (!city) return buildMetadata({ title: "Service Area" });
   return buildMetadata({
     title: city.headline,
-    description: city.paragraphs[0],
+    description: city.paragraphs[0] ?? city.headline,
     path: `/service-areas/${city.city}`,
   });
 };
