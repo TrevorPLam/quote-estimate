@@ -82,10 +82,10 @@
 
 ## Stage C: QA + Documentation
 
-- [ ] Verify `npm run dev` works
-- [ ] Verify `npm run build` works
-- [ ] Verify `npm run lint` passes
-- [ ] Verify no runtime errors
+- [ ] Verify `npm run dev` works *(blocked by npm registry 403 preventing dependency install)*
+- [ ] Verify `npm run build` works *(blocked by npm registry 403 preventing dependency install)*
+- [ ] Verify `npm run lint` passes *(blocked by npm registry 403 preventing dependency install)*
+- [ ] Verify no runtime errors *(pending once installs succeed)*
 - [ ] Verify no lorem ipsum (use "TODO:INPUT" for unknowns)
 - [x] Create `README.md` with build/lint/dev instructions
 
