@@ -2,83 +2,83 @@
 
 ## Stage A: Repo Scaffold + Config + Layout + Libs + SEO + Tooling
 
-- [ ] Initialize Next.js project with App Router
-- [ ] Configure TypeScript
-- [ ] Configure Tailwind CSS
-- [ ] Create `.devcontainer/devcontainer.json`
-- [ ] Create `src/config/site.ts` with all interfaces and config object
-- [ ] Create `src/app/layout.tsx`
-- [ ] Create `src/app/globals.css`
-- [ ] Create `src/lib/tracking.ts`
-- [ ] Create `src/lib/analytics.ts`
-- [ ] Create `src/lib/schema.ts`
-- [ ] Create `src/lib/seo.ts`
-- [ ] Create `src/lib/rateLimit.ts`
-- [ ] Create `src/lib/utils.ts`
-- [ ] Create `src/app/robots.ts`
-- [ ] Create `src/app/sitemap.ts`
-- [ ] Configure `tailwind.config.ts`
-- [ ] Configure `postcss.config.js`
-- [ ] Configure `tsconfig.json`
-- [ ] Configure ESLint
+- [x] Initialize Next.js project with App Router
+- [x] Configure TypeScript
+- [x] Configure Tailwind CSS
+- [x] Create `.devcontainer/devcontainer.json`
+- [x] Create `src/config/site.ts` with all interfaces and config object
+- [x] Create `src/app/layout.tsx`
+- [x] Create `src/app/globals.css`
+- [x] Create `src/lib/tracking.ts`
+- [x] Create `src/lib/analytics.ts`
+- [x] Create `src/lib/schema.ts`
+- [x] Create `src/lib/seo.ts`
+- [x] Create `src/lib/rateLimit.ts`
+- [x] Create `src/lib/utils.ts`
+- [x] Create `src/app/robots.ts`
+- [x] Create `src/app/sitemap.ts`
+- [x] Configure `tailwind.config.ts`
+- [x] Configure `postcss.config.js`
+- [x] Configure `tsconfig.json`
+- [x] Configure ESLint
 
 ## Stage B: Components + Pages/Routes
 
 ### Components
 
-- [ ] `src/components/Header.tsx`
-- [ ] `src/components/Footer.tsx`
-- [ ] `src/components/StickyCTA.tsx`
-- [ ] `src/components/JsonLd.tsx`
-- [ ] `src/components/NAP.tsx`
-- [ ] `src/components/ContactMethods.tsx`
-- [ ] `src/components/LeadForm.tsx` (simple fallback form)
-- [ ] `src/components/EstimateWizard.tsx` (multi-step estimate form)
-- [ ] `src/components/ProgressBar.tsx`
-- [ ] `src/components/FileUpload.tsx`
-- [ ] `src/components/ProofStack.tsx`
-- [ ] `src/components/Testimonials.tsx`
-- [ ] `src/components/FAQ.tsx`
-- [ ] `src/components/ServiceCards.tsx`
-- [ ] `src/components/ProjectCards.tsx`
+- [x] `src/components/Header.tsx`
+- [x] `src/components/Footer.tsx`
+- [x] `src/components/StickyCTA.tsx`
+- [x] `src/components/JsonLd.tsx`
+- [x] `src/components/NAP.tsx`
+- [x] `src/components/ContactMethods.tsx`
+- [x] `src/components/LeadForm.tsx` (simple fallback form)
+- [x] `src/components/EstimateWizard.tsx` (multi-step estimate form)
+- [x] `src/components/ProgressBar.tsx`
+- [x] `src/components/FileUpload.tsx`
+- [x] `src/components/ProofStack.tsx`
+- [x] `src/components/Testimonials.tsx`
+- [x] `src/components/FAQ.tsx`
+- [x] `src/components/ServiceCards.tsx`
+- [x] `src/components/ProjectCards.tsx`
 
 ### Section Components
 
-- [ ] `src/components/sections/HeroSection.tsx`
-- [ ] `src/components/sections/ProofSection.tsx`
-- [ ] `src/components/sections/ServicesSection.tsx`
-- [ ] `src/components/sections/ProjectsPreviewSection.tsx`
-- [ ] `src/components/sections/ProcessPreviewSection.tsx`
-- [ ] `src/components/sections/FAQSection.tsx`
-- [ ] `src/components/sections/CTASection.tsx`
+- [x] `src/components/sections/HeroSection.tsx`
+- [x] `src/components/sections/ProofSection.tsx`
+- [x] `src/components/sections/ServicesSection.tsx`
+- [x] `src/components/sections/ProjectsPreviewSection.tsx`
+- [x] `src/components/sections/ProcessPreviewSection.tsx`
+- [x] `src/components/sections/FAQSection.tsx`
+- [x] `src/components/sections/CTASection.tsx`
 
 ### Pages
 
-- [ ] `src/app/page.tsx` (Home)
-- [ ] `src/app/services/page.tsx` (Services hub)
-- [ ] `src/app/services/[slug]/page.tsx` (Service detail)
-- [ ] `src/app/estimate/page.tsx` (Multi-step form)
-- [ ] `src/app/projects/page.tsx` (Projects hub)
-- [ ] `src/app/projects/[slug]/page.tsx` (Case study detail)
-- [ ] `src/app/process/page.tsx` (How it works)
-- [ ] `src/app/service-areas/page.tsx` (Service areas hub)
-- [ ] `src/app/service-areas/[city]/page.tsx` (City page)
-- [ ] `src/app/reviews/page.tsx`
-- [ ] `src/app/about/page.tsx`
-- [ ] `src/app/contact/page.tsx`
-- [ ] `src/app/policies/page.tsx`
-- [ ] `src/app/privacy/page.tsx`
-- [ ] `src/app/terms/page.tsx`
-- [ ] `src/app/not-found.tsx`
+- [x] `src/app/page.tsx` (Home)
+- [x] `src/app/services/page.tsx` (Services hub)
+- [x] `src/app/services/[slug]/page.tsx` (Service detail)
+- [x] `src/app/estimate/page.tsx` (Multi-step form)
+- [x] `src/app/projects/page.tsx` (Projects hub)
+- [x] `src/app/projects/[slug]/page.tsx` (Case study detail)
+- [x] `src/app/process/page.tsx` (How it works)
+- [x] `src/app/service-areas/page.tsx` (Service areas hub)
+- [x] `src/app/service-areas/[city]/page.tsx` (City page)
+- [x] `src/app/reviews/page.tsx`
+- [x] `src/app/about/page.tsx`
+- [x] `src/app/contact/page.tsx`
+- [x] `src/app/policies/page.tsx`
+- [x] `src/app/privacy/page.tsx`
+- [x] `src/app/terms/page.tsx`
+- [x] `src/app/not-found.tsx`
 
 ### API Routes
 
-- [ ] `src/app/api/lead/route.ts`
-- [ ] `src/app/api/upload/route.ts` (template stub)
+- [x] `src/app/api/lead/route.ts`
+- [x] `src/app/api/upload/route.ts` (template stub)
 
 ### Public Assets
 
-- [ ] `public/projects/` (placeholder images)
+- [x] `public/projects/` (placeholder images)
 
 ## Stage C: QA + Documentation
 
@@ -87,7 +87,7 @@
 - [ ] Verify `npm run lint` passes
 - [ ] Verify no runtime errors
 - [ ] Verify no lorem ipsum (use "TODO:INPUT" for unknowns)
-- [ ] Create `README.md` with build/lint/dev instructions
+- [x] Create `README.md` with build/lint/dev instructions
 
 ---
 
@@ -95,69 +95,69 @@
 
 ### UX Requirements
 
-- [ ] Mobile-first design
-- [ ] Sticky primary CTA ("Get Estimate") on every page
-- [ ] Secondary CTA on mobile sticky bar ("Call" tel: link)
-- [ ] Sticky CTA does not cover content (global bottom padding)
-- [ ] Estimate flow reachable in 1 click from any page
+- [x] Mobile-first design
+- [x] Sticky primary CTA ("Get Estimate") on every page
+- [x] Secondary CTA on mobile sticky bar ("Call" tel: link)
+- [x] Sticky CTA does not cover content (global bottom padding)
+- [x] Estimate flow reachable in 1 click from any page
 
 ### Design Requirements
 
-- [ ] Consistent container + section spacing (py-12/py-16)
-- [ ] Typography hierarchy (hero 3xl–5xl, readable body)
-- [ ] Buttons with primary + secondary variants, hover + focus-visible states
-- [ ] Cards with consistent radius + subtle border/shadow
+- [x] Consistent container + section spacing (py-12/py-16)
+- [x] Typography hierarchy (hero 3xl–5xl, readable body)
+- [x] Buttons with primary + secondary variants, hover + focus-visible states
+- [x] Cards with consistent radius + subtle border/shadow
 
 ### Home Page Section Order
 
-1. [ ] HeroSection (headline, subheadline, 3 bullets, Get Estimate CTA, Call link, proof row)
-2. [ ] ProofSection (testimonials + badges/credentials placeholders)
-3. [ ] ServicesSection (service cards linking to service detail pages)
-4. [ ] ProjectsPreviewSection (3–6 case studies)
-5. [ ] ProcessPreviewSection (3–5 steps)
-6. [ ] FAQSection (3–6 FAQs)
-7. [ ] CTASection (final estimate CTA)
+1. [x] HeroSection (headline, subheadline, 3 bullets, Get Estimate CTA, Call link, proof row)
+2. [x] ProofSection (testimonials + badges/credentials placeholders)
+3. [x] ServicesSection (service cards linking to service detail pages)
+4. [x] ProjectsPreviewSection (3–6 case studies)
+5. [x] ProcessPreviewSection (3–5 steps)
+6. [x] FAQSection (3–6 FAQs)
+7. [x] CTASection (final estimate CTA)
 
 ### Estimate Wizard Requirements
 
-- [ ] Multi-step form (3–5 steps)
-- [ ] Progress indicator
-- [ ] Validation per step
-- [ ] Cannot submit until required fields complete
-- [ ] Clear confirmation screen with "What happens next"
-- [ ] Photo upload UI (if enabled)
+- [x] Multi-step form (3–5 steps)
+- [x] Progress indicator
+- [x] Validation per step
+- [x] Cannot submit until required fields complete
+- [x] Clear confirmation screen with "What happens next"
+- [x] Photo upload UI (if enabled)
 
 ### Lead Routing + Spam Protection
 
-- [ ] Honeypot field + rejection logic
-- [ ] In-memory rate limiting per IP (TODO:PROD for Redis/Upstash)
-- [ ] Input sanitization (trim, max length)
-- [ ] Turnstile verification (if enabled)
-- [ ] Webhook forwarding (if configured) or console.log fallback
+- [x] Honeypot field + rejection logic
+- [x] In-memory rate limiting per IP (TODO:PROD for Redis/Upstash)
+- [x] Input sanitization (trim, max length)
+- [x] Turnstile verification (if enabled)
+- [x] Webhook forwarding (if configured) or console.log fallback
 
 ### Analytics Events
 
-- [ ] `cta_estimate_click`
-- [ ] `phone_click`
-- [ ] `estimate_step_complete`
-- [ ] `estimate_submit`
-- [ ] `estimate_success`
-- [ ] `estimate_error`
-- [ ] `lead_form_submit`
+- [x] `cta_estimate_click`
+- [x] `phone_click`
+- [x] `estimate_step_complete`
+- [x] `estimate_submit`
+- [x] `estimate_success`
+- [x] `estimate_error`
+- [x] `lead_form_submit`
 
 ### SEO Requirements
 
-- [ ] Canonical URLs via Metadata API
-- [ ] robots.ts with Sitemap reference
-- [ ] sitemap.ts with all routes (static + dynamic)
-- [ ] Service-area pages with 2+ unique paragraphs per city
+- [x] Canonical URLs via Metadata API
+- [x] robots.ts with Sitemap reference
+- [x] sitemap.ts with all routes (static + dynamic)
+- [x] Service-area pages with 2+ unique paragraphs per city
 
 ### JSON-LD Schema
 
-- [ ] LocalBusiness on Home/Contact
-- [ ] Service schema on service pages
-- [ ] BreadcrumbList on internal pages
-- [ ] FAQPage where FAQs render
+- [x] LocalBusiness on Home/Contact
+- [x] Service schema on service pages
+- [x] BreadcrumbList on internal pages
+- [x] FAQPage where FAQs render
 
 ---
 
@@ -169,3 +169,4 @@
 - Service area city paragraphs (2+ unique per city)
 - Project case study `resultsText`
 - Estimate confirmation expected response time
+- Resolve registry access to complete `npm install` (current env 403 on @types/node)
