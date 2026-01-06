@@ -23,7 +23,9 @@ export default function PrivacyPage() {
       <div className="space-y-3 text-slate-700">
         <p>We collect contact details and project notes to prepare estimates and manage projects.</p>
         <p>Data may be shared with project partners strictly for scheduling or proposal creation.</p>
-        <p>Request deletion or updates by emailing {siteConfig.email ?? "TODO:INPUT"}.</p>
+        {siteConfig.email && (
+          <p>Request deletion or updates by emailing {siteConfig.email}.</p>
+        )}
       </div>
       <JsonLd
         data={buildBreadcrumbSchema([
