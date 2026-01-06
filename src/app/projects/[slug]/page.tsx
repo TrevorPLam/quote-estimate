@@ -13,7 +13,9 @@ interface ProjectPageProps {
 
 export const generateMetadata = ({ params }: ProjectPageProps) => {
   const project = siteConfig.projects.find((item) => item.slug === params.slug);
-  if (!project) return buildMetadata({ title: "Project" });
+  if (!project) {
+    notFound();
+  }
   return buildMetadata({
     title: project.title,
     description: project.solution,
