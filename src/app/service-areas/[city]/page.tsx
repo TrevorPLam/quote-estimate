@@ -26,7 +26,8 @@ export default function CityPage({ params }: CityPageProps) {
   const city = siteConfig.serviceAreas.find((item) => item.city === params.city);
   if (!city) return notFound();
 
-  const relatedProjects = siteConfig.projects.filter((project) => city.featuredProjectSlugs.includes(project.slug));
+  const featuredProjectSlugs = city.featuredProjectSlugs ?? [];
+  const relatedProjects = siteConfig.projects.filter((project) => featuredProjectSlugs.includes(project.slug));
 
   return (
     <div className="space-y-6">
