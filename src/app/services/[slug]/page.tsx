@@ -34,8 +34,8 @@ export default function ServicePage({ params }: ServicePageProps) {
         {service.priceRange && <p className="text-sm text-slate-600">{service.priceRange}</p>}
       </div>
       <div className="space-y-4">
-        {service.longDescriptionParagraphs.map((paragraph) => (
-          <p key={paragraph} className="text-slate-700">
+        {service.longDescriptionParagraphs.map((paragraph, index) => (
+          <p key={`${service.slug}-paragraph-${index}`} className="text-slate-700">
             {paragraph}
           </p>
         ))}
