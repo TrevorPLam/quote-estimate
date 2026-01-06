@@ -38,7 +38,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
       <div className="space-y-3">
         <h2 className="text-xl font-semibold text-slate-900">Scope</h2>
         <ul className="list-disc space-y-1 pl-5 text-slate-700">
-          {project.scopeBullets.map((item) => (
+          {(project.scopeBullets ?? []).map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>
