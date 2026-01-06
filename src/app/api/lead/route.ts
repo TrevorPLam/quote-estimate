@@ -42,7 +42,6 @@ export async function POST(request: Request) {
       }
     } catch (error) {
       console.error("Turnstile verification error", error);
-    if (!verification.success) {
       return NextResponse.json({ error: "Turnstile verification failed" }, { status: 400 });
     }
   }

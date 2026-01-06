@@ -18,6 +18,8 @@ export const rateLimit = (
     }
   }
 
+  const existing = requestCounts.get(key);
+
   if (!existing || existing.expiresAt < now) {
     requestCounts.set(key, { count: 1, expiresAt: now + windowMs });
     return { allowed: true, remaining: limit - 1 };
